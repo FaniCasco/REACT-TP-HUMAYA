@@ -95,7 +95,7 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 33vw;
+        margin-left: -28px;
 
     }
 
@@ -103,13 +103,13 @@ nav {
         width: 150px;
         height: 150px;
     }
-    
-#texto-portada {
-justify-content: center;
-align-content: center;
-margin: auto;
-    width: 80%;
-    text-align: center;
-  
-}
+
+    #texto-portada {
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+
+    }
 }
