@@ -1,15 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-body {
-    background-image: url(./img/fondo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+nav {
+    background-color: #d2675a;
+
 }
-header {
-    background-color: deepskyblue;
+
+.nav-item a {
+    color: white;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-left: 10px;
+    margin-bottom: -50%;
+    border: solid 2px #d2675a;
+
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: right;
+    margin: auto;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+
+}
+
+#banner {
+    background-image: url(./img/banner.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 100vh;
+
+}
+
+#texto-portada {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50vw;
+    padding-top: 15vh;
+    padding-right: 5vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+#texto-portada p {
+    color: #573732;
+    font-size: 1.7em;
+}
+
+#texto-portada h1 {
+    color: #573732;
+}
+
+.btn {
+    background-color: #573732;
+    color: white;
+    max-width: fit-content;
+    border-radius: 50px;
+    font-size: 1.5em;
+    padding: 15px;
+    align-self: center;
+
+}
+
+.btn:hover {
+
+    background-color: #d2675a;
+}
+
+/**MEDIAS QUERYS*/
+@media screen and (max-width:992px) {
+    .navbar-nav {
+        gap: 2px;
+        margin-top: 100px;
+    }
+
+    .navbar-brand {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 33vw;
+
+    }
+
+    .navbar-brand img {
+        width: 150px;
+        height: 150px;
+    }
+    
+#texto-portada {
+justify-content: center;
+align-content: center;
+margin: auto;
+    width: 80%;
+    text-align: center;
+  
+}
 }
