@@ -6,6 +6,7 @@
     padding: 0;
 }
 
+/*nav*/
 nav {
     background-color: #d2675a;
     height: 25vh;
@@ -27,6 +28,7 @@ nav {
 
 }
 
+/*logo de la nav*/
 .navbar-brand img {
     width: 150px;
     height: 150px;
@@ -48,6 +50,7 @@ nav {
 
 }
 
+/*imagen de portada*/
 #banner {
     background-image: url(./img/banner.jpg);
     background-repeat: no-repeat;
@@ -59,6 +62,7 @@ nav {
 
 }
 
+/*texto de portada*/
 #texto-portada {
     display: flex;
     justify-content: center;
@@ -80,6 +84,7 @@ nav {
     color: #573732;
 }
 
+/*boton principal*/
 .btn {
     background-color: #573732;
     color: white;
@@ -96,10 +101,99 @@ nav {
     background-color: #d2675a;
 }
 
+/*section calidad*/
+.calidad {
+    padding: 20px;
+    text-align: center;
+    background-color: #573732;
+}
+
+.titulo-secciones {
+    color: #ffbfa5;
+}
+
+.calidad .img-fluid {
+    margin-right: 20px;
+    width: 180px;
+}
+
+/*section recetas*/
+.recetas {
+   
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+#seccion-recetas {
+    background-color: #ffbfa5;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+}
+
+.titulo-secciones-2 {
+    background-color: #ffbfa5;
+    color: #573732;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+}
+
+
+
+#seccion-recetas .card-body {
+    background-color: #573732;
+    
+
+}
+
+#seccion-recetas .card {
+    width: 350px;
+    color: #ffbfa5;
+    margin-bottom: 40px;
+    margin: 5px;
+}
+
+#seccion-recetas .card .btn-card {
+
+    color: #573732;
+    background-color: #ffbfa5;
+    border-radius: 0%;
+    padding: 2%;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+#seccion-recetas .card .btn-card:hover {
+    color: #ffbfa5;
+    background-color: black;
+}
+
+#seccion-recetas .card img {
+    height: 200px;
+}
+
+
+
 /**MEDIAS QUERYS*/
 @media screen and (max-width: 1200px) {
     .navbar-brand img {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1115px) {
+    .recetas {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: 'c-1 c-2', 'c-3';
+
     }
 }
 
@@ -110,7 +204,6 @@ nav {
         padding-bottom: 5vh;
         margin-left: -26px;
     }
-   
 
 
     .navbar-brand img {
@@ -126,9 +219,18 @@ nav {
         text-align: center;
 
     }
-    .nav-item .contacto{
+
+    .nav-item .contacto {
         margin-bottom: 10px;
     }
+
+    .recetas {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-area: 'c-1', 'c-2', 'c-3';
+    }
+
+
 }
 
 @media screen and (max-width: 990px) {
@@ -144,6 +246,6 @@ nav {
         height: 50vh;
 
     }
-   
+
 
 }
