@@ -12,6 +12,7 @@ nav {
 
 }
 
+
 .nav-item a {
     color: white;
 
@@ -109,6 +110,7 @@ nav {
         padding-bottom: 5vh;
         margin-left: -26px;
     }
+   
 
 
     .navbar-brand img {
@@ -123,6 +125,9 @@ nav {
         width: 80%;
         text-align: center;
 
+    }
+    .nav-item .contacto{
+        margin-bottom: 10px;
     }
 }
 
@@ -139,5 +144,6 @@ nav {
         height: 45vh;
 
     }
+   
 
 }
