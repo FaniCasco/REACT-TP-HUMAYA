@@ -108,7 +108,7 @@ nav {
     background-color: #573732;
 }
 
-.titulo-secciones {
+.titulo-seccion-1 {
     color: #ffbfa5;
 }
 
@@ -119,7 +119,7 @@ nav {
 
 /*section recetas*/
 .recetas {
-   
+
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,10 +131,11 @@ nav {
     display: flex;
     justify-content: center;
     margin: auto;
-   
+    padding-bottom: 20px;
+
 }
 
-.titulo-secciones-2 {
+.titulo-seccion-2 {
     background-color: #ffbfa5;
     color: #573732;
     padding-top: 20px;
@@ -146,7 +147,7 @@ nav {
 
 #seccion-recetas .card-body {
     background-color: #573732;
-    
+
 
 }
 
@@ -177,6 +178,67 @@ nav {
 
 #seccion-recetas .card img {
     height: 200px;
+}
+
+/*seccion contacto*/
+.titulo-seccion-3 {
+
+    color: #ffbfa5;
+    padding-bottom: 20px;
+
+}
+
+#card-contacto {
+    background-color: #ffbfa5;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+
+}
+
+.contacto {
+
+    text-align: center;
+    background-color: #573732;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#postre {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-area: 'img-contacto', 'form';
+   
+
+}
+
+.img-contacto {
+    
+    width: 300px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+form {
+margin-top: 10px;
+    width: 100%;
+   
+}
+
+
+label,
+input {
+    margin-top: 10px;
 }
 
 
@@ -242,10 +304,24 @@ nav {
     }
 
     nav {
-
         height: 50vh;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+    #postre {
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-area: 'img-contacto', 'h5-f', 'formu';
 
     }
 
+    form label,
+    input {
 
+        text-align: center;
+        width: 80%;
+    }
 }
