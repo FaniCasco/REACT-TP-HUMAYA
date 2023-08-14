@@ -8,14 +8,25 @@
 
 /*nav*/
 nav {
-    background-color: #d2675a;
-    height: 25vh;
+    background-color: #ce5d507a;
+    height: 35vh;
+
+}
+
+.navbar-nav {
+
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+    margin-left: 20vw;
+    margin-bottom: -15vh;
 
 }
 
 
 .nav-item a {
-    color: white;
+    color: #fdf0e4;
+    font-size: 1.5em;
 
 }
 
@@ -30,25 +41,16 @@ nav {
 
 /*logo de la nav*/
 .navbar-brand img {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    width: 188px;
+    height: 188px;
+    border-radius: 100px;
     margin-left: 20px;
-    margin-bottom: -60%;
+    margin-bottom: -64%;
     border: solid 2px #d2675a;
 
 }
 
-.navbar-nav {
-    display: flex;
-    font-size: 1.2rem;
-    justify-content: right;
-    margin: auto;
-    align-items: center;
-    gap: 100px;
-    text-align: center;
 
-}
 
 /*imagen de portada*/
 #banner {
@@ -57,8 +59,7 @@ nav {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: auto;
-    padding-bottom: 20vh;
+    height: 200vh;
 
 }
 
@@ -68,7 +69,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     margin-left: 50vw;
-    padding-top: 15vh;
+    padding-top: 25vh;
     padding-right: 5vw;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -78,6 +79,8 @@ nav {
 #texto-portada p {
     color: #573732;
     font-size: 1.7em;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
 }
 
 #texto-portada h1 {
@@ -85,8 +88,8 @@ nav {
 }
 
 /*boton principal*/
-.btn {
-    background-color: #573732;
+.btn-portada {
+    --bs-btn-bg: #573732;
     color: white;
     max-width: fit-content;
     border-radius: 50px;
@@ -94,11 +97,13 @@ nav {
     padding: 15px;
     align-self: center;
 
+
+
 }
 
 .btn:hover {
 
-    background-color: #d2675a;
+    --bs-btn-bg: #d2675a;
 }
 
 /*section calidad*/
@@ -161,7 +166,7 @@ nav {
 #seccion-recetas .card .btn-card {
 
     color: #573732;
-    background-color: #ffbfa5;
+    --bs-btn-bg: #ffbfa5;
     border-radius: 0%;
     padding: 2%;
     margin-top: 17px;
@@ -180,8 +185,115 @@ nav {
     height: 200px;
 }
 
-/*seccion contacto*/
+
+/*seccion productos*/
+#seccion-productos {
+    width: 1200px;
+
+
+    justify-content: center;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+}
+
+.prod-1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.texto-producto-1 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.prod-2 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.texto-producto-2 {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.prod-3 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.texto-producto-3 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+
+
+
+
+.bg {
+    background-color: #573732;
+}
+
+#seccion-productos .texto-producto-1,
+.texto-producto-2,
+.texto-producto-3 {
+    background-color: black;
+
+    padding: 25px;
+}
+
 .titulo-seccion-3 {
+    background-color: #573732;
+    color: #ffbfa5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+
+#seccion-productos h3 {
+    color: #ffbfa5;
+    padding-bottom: 20px;
+    padding-top: 35px;
+
+
+}
+
+#seccion-productos .parr-1 {
+    color: #fdfaf9;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+#seccion-productos .parr-2 {
+    color: #ffbfa5;
+    font-weight: 700;
+
+}
+
+
+.btn-info {
+    background-color: transparent;
+    border: solid 4px #ffbfa5;
+    ;
+    margin-left: 40%;
+
+
+}
+
+.btn-info a {
+    text-decoration: none;
+    color: #ffbfa5;
+    font-size: 1.3em;
+    padding: 5px 18px 5px 18px;
+}
+
+/*seccion contacto*/
+.titulo-seccion-4 {
 
     color: #ffbfa5;
     padding-bottom: 20px;
@@ -214,14 +326,13 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-area: 'img-contacto', 'form';
-   
+
 
 }
 
 .img-contacto {
-    
+
     width: 300px;
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,9 +341,9 @@ nav {
 
 
 form {
-margin-top: 10px;
+    margin-top: 10px;
     width: 100%;
-   
+
 }
 
 
@@ -241,7 +352,52 @@ input {
     margin-top: 12px;
 }
 
+/*footer*/
+footer {
 
+    max-width: 1200vw;
+    background-color: #281917;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .m-top-redes {
+    margin-top: 20px;
+}
+
+footer .m-top-ubicacion {
+    margin-top: 104px;
+}
+
+footer h5 {
+
+    color: #ffbfa5;
+}
+
+footer li {
+    color: white;
+    list-style: none;
+}
+
+footer .logo {
+    width: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 75%;
+}
+
+footer .redes {
+    width: 35px;
+    border-radius: 75%;
+    margin-bottom: 5px;
+}
+
+footer .mapa {
+    width: 300px;
+    height: 200px;
+}
 
 /**MEDIAS QUERYS*/
 @media screen and (max-width: 1200px) {
@@ -257,21 +413,58 @@ input {
         grid-area: 'c-1 c-2', 'c-3';
 
     }
+
+    #seccion-productos {
+        width: 600px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .prod-1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+
+    .texto-producto-1 {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .prod-2 {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+
+    .texto-producto-2 {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+
+    .prod-3 {
+        grid-column: 1 / 2;
+        grid-row: 5;
+    }
+
+    .texto-producto-3 {
+        grid-column: 1 / 2;
+        grid-row: 6;
+    }
 }
 
 @media screen and (max-width:992px) {
+    .navbar-toggler {
+        margin-right: 40px;
+        margin-top: -147px;
+    }
     .navbar-nav {
-        gap: 2px;
-        margin-top: 5vh;
-        padding-bottom: 5vh;
-        margin-left: -26px;
+        margin-top: -86px;
     }
 
-
-    .navbar-brand img {
-        width: 150px;
-        height: 150px;
+    .nav-item {
+        margin-top: -11vh;
     }
+
 
     #texto-portada {
         justify-content: center;
@@ -298,14 +491,11 @@ input {
 @media screen and (max-width: 990px) {
     .navbar-brand {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-content: center;
-        margin: auto;
+       
     }
 
-    nav {
-        height: 50vh;
-    }
 
 }
 
