@@ -45,7 +45,7 @@ nav {
     height: 188px;
     border-radius: 100px;
     margin-left: 20px;
-    margin-bottom: -64%;
+    margin-bottom: -84%;
     border: solid 2px #d2675a;
 
 }
@@ -59,7 +59,7 @@ nav {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 200vh;
+    height: 165vh;
 
 }
 
@@ -91,7 +91,6 @@ nav {
 .btn-portada {
     --bs-btn-bg: #573732;
     color: white;
-    max-width: fit-content;
     border-radius: 50px;
     font-size: 1.5em;
     padding: 15px;
@@ -279,18 +278,16 @@ nav {
 .btn-info {
     background-color: transparent;
     border: solid 4px #ffbfa5;
-    ;
+    text-decoration: none;
+    color: #ffbfa5;
+    font-size: 1.3em;
+    padding: 5px 18px 5px 18px;
     margin-left: 40%;
 
 
 }
 
-.btn-info a {
-    text-decoration: none;
-    color: #ffbfa5;
-    font-size: 1.3em;
-    padding: 5px 18px 5px 18px;
-}
+
 
 /*seccion contacto*/
 .titulo-seccion-4 {
@@ -371,9 +368,9 @@ footer .m-top-ubicacion {
     margin-top: 104px;
 }
 
-footer h5 {
-
+footer .texto-li {
     color: #ffbfa5;
+    font-weight: 600;
 }
 
 footer li {
@@ -381,8 +378,8 @@ footer li {
     list-style: none;
 }
 
-footer .logo {
-    width: 100px;
+footer .logo img {
+    width: 150px;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 75%;
@@ -457,6 +454,7 @@ footer .mapa {
         margin-right: 40px;
         margin-top: -147px;
     }
+
     .navbar-nav {
         margin-top: -86px;
     }
@@ -485,7 +483,38 @@ footer .mapa {
         grid-area: 'c-1', 'c-2', 'c-3';
     }
 
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
 
+    footer div {
+        text-align: center;
+    }
+
+    footer .logo img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .menu {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    .navegacion {
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+    .redes {
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+    .ubicacion {
+        grid-column: 1 / 2;
+        grid-row: 5;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -493,7 +522,7 @@ footer .mapa {
         display: flex;
         justify-content: left;
         align-content: center;
-       
+
     }
 
 
