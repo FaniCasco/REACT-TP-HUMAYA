@@ -485,10 +485,7 @@ footer .redes {
         margin-top: -128px;
     }
 
-    .navbar-nav {
-        margin-top: -101px;
-        margin-left: 108px;
-    }
+   
 }
 
 @media screen and (max-width: 1115px) {
@@ -667,6 +664,6 @@ footer .redes {
 
     .navbar-nav {
         margin-top: -56px;
-        margin-left: 136px;
+        margin-left: 106px;
     }
 }
