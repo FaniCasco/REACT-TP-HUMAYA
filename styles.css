@@ -588,6 +588,7 @@ footer .redes {
         grid-template-rows: auto;
 
     }
+
     footer .redes {
         width: 50px;
     }
@@ -629,9 +630,10 @@ footer .redes {
 
 
     footer .copy {
-        grid-column: 2 / 3;
+        grid-column: 1 /4;
         grid-row: 3;
-       
+        margin-left: 20px;
+
     }
 }
 
