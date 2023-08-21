@@ -476,6 +476,17 @@ footer .redes {
 @media screen and (max-width: 1200px) {
     .navbar-brand img {
         margin-bottom: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        margin-top: -128px;
+    }
+
+    .navbar-nav {
+        margin-top: -101px;
+        margin-left: 195px;
     }
 }
 
@@ -486,11 +497,12 @@ footer .redes {
         grid-area: 'c-1 c-2', 'c-3';
 
     }
-.container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-  text-align: center;
-}
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+    }
 
 
     .prod-1 {
@@ -523,6 +535,7 @@ footer .redes {
         grid-column: 1 / 2;
         grid-row: 6;
     }
+
     .prod-4 {
         grid-column: 1 / 2;
         grid-row: 7;
@@ -541,16 +554,7 @@ footer .redes {
         display: none;
     }
 
-    .navbar-toggler {
-        margin-right: 40px;
-        margin-top: -147px;
-    }
-
-    .navbar-nav {
-        margin-top: -86px;
-    }
-
-    .nav-item {
+      .nav-item {
         margin-top: -11vh;
     }
 
@@ -644,5 +648,22 @@ footer .redes {
 
         text-align: center;
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand img {
+       
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        margin-top: -75px;
+    }
+
+    .navbar-nav {
+        margin-top: -56px;
+        margin-left: 136px;
     }
 }
