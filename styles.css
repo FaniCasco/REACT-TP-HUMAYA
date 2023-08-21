@@ -18,8 +18,12 @@ nav {
     align-items: center;
     gap: 100px;
     text-align: center;
-    margin-left: 20vw;
-    margin-bottom: -15vh;
+    margin-left: 144px;
+
+}
+
+.nav-item {
+    margin-top: 46px;
 
 }
 
@@ -651,7 +655,7 @@ footer .redes {
     }
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 500px) {
     .navbar-brand img {
 
         width: 150px;
@@ -663,8 +667,8 @@ footer .redes {
     }
 
     .navbar-nav {
-        margin-left: 35vw;
+        margin-left: 25vw;
         margin-bottom: -37vh;
-        margin-top: -45px;
+        margin-top: -58px;
     }
 }
