@@ -588,40 +588,50 @@ footer .redes {
         grid-template-rows: auto;
 
     }
-
-    footer img {
-        margin-left: 0%;
+    footer .redes {
+        width: 50px;
     }
 
-    footer .logo {
-
+    footer .m-top-redes {
         grid-column: 1 / 4;
         grid-row: 1;
+
     }
 
-    footer .menu {
+    .redes-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .texto-li {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ins {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .face {
         grid-column: 2 / 3;
         grid-row: 2;
     }
 
-    footer .navegacion {
-        grid-column: 2 / 3;
-        grid-row: 3;
+    .tik {
+        grid-column: 3 / 4;
+        grid-row: 2;
     }
 
-    footer .lasredes {
-        grid-column: 2 / 3;
-        grid-row: 4;
-    }
-
-    footer .ubicacion {
-        grid-column: 2 / 3;
-        grid-row: 5;
-    }
 
     footer .copy {
         grid-column: 2 / 3;
-        grid-row: 6;
+        grid-row: 3;
+       
     }
 }
 
