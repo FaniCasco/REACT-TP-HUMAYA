@@ -70,7 +70,7 @@
       <div class="recetas">
 
         <div class="card c-1">
-          <img src="./img/galletas-avena.jpg" class="card-img-top" alt="galletas de avena">
+          <img src="./img/galletas-avena.jpg" class="card-img" alt="galletas de avena">
           <div class="card-body">
             <h5 class="card-title text-center">GALLETITAS DE AVENA</h5>
             <p class="card-text">Si querés comer saludable y rico, esta es la opción ideal: galletitas altas en fibra y
@@ -82,7 +82,7 @@
 
 
         <div class="card c-2">
-          <img src="./img/lemon-pie.jpg" class="card-img-top" alt="tarta de lemon pie">
+          <img src="./img/lemon-pie.jpg" class="card-img" alt="tarta de lemon pie">
           <div class="card-body">
             <h5 class="card-title text-center">LEMON PIE</h5>
             <p class="card-text">Te mostramos la receta que lo tiene todo: merengue en su textura justa en una tarta de
@@ -94,7 +94,7 @@
 
 
         <div class="card c-3">
-          <img src="./img/cheese-cake.jpg" class="card-img-top" alt="tarta de frutillas sin tacc">
+          <img src="./img/cheese-cake.jpg" class="card-img" alt="tarta de frutillas sin tacc">
           <div class="card-body">
             <h5 class="card-title text-center">TARTA DE FRUTILLAS SIN TACC</h5>
             <p class="card-text">¡Esta tarta de frutillas con crema sin TACC te va a encantar! Es fácil y económica,
@@ -107,36 +107,37 @@
       </div>
     </section>
     <!--Seccion productos-->
-    <section class="bg">
-      <h2 class="titulo-seccion-3 text-center">PRODUCTOS</h2>
+    <h2 class="titulo-seccion-3 text-center">PRODUCTOS</h2>
+    <section class="bg container">
+    
+            <!-- Contenido del primer elemento -->
+           <img class="prod-1 img-fluid" src="./img/alfajores.webp" alt="alfajores de maicena">
+     
+            <!-- Contenido del segundo elemento -->
+            <div class="texto-producto-1">
+              <h3>ALFAJORES DE MAICENA</h3>
+              <p class="parr-1">Estos alfajores son un clásico argentino, no faltan en los recreos ni en las meriendas.</p>
+              <p class="parr-2">Caja x12 de alfajores de maicena de 35gr. por unidad.</p><br>
+              <a href="#" class="btn-info">+ INFO</a>
+            </div>
+     
+          <!-- Contenido del primer elemento -->
+          <img class="prod-2 img-fluid" src="./img/coco.webp" alt="bocaditos de coco">
+     
+          <!-- Contenido del segundo elemento -->
+          <div class="texto-producto-2">
+            <h3>BOCADITOS DE COCO</h3>
+            <p class="parr-1">Para los amantes del coco, les ofrecemos estos deliciosos bocaditos para compartir con
+              amigos.</p>
+            <p class="parr-2">Caja x12 de bocaditos de coco de 20gr. por unidad.</p><br>
+            <a href="#" class="btn-info">+ INFO</a>
+          </div>
+    
+    
+        <!-- Contenido del primer elemento -->
+        <img class="prod-3 img-fluid" src="./img/sinazucar.webp" alt="budin sin azucar">
 
-      <div id="seccion-productos">
-
-        <div class="prod-1"><img src="./img/alfajores.webp" alt="alfajores de maicena"></div>
-
-
-        <div class="texto-producto-1">
-          <h3>ALFAJORES DE MAICENA</h3>
-          <p class="parr-1">Estos alfajores son un clásico argentino, no faltan en los recreos ni en las meriendas.</p>
-          <p class="parr-2">Caja x12 de alfajores de maicena de 35gr. por unidad.</p><br>
-          <a href="#" class="btn-info">+ INFO</a>
-        </div>
-
-
-        <div class="prod-2"><img src="./img/coco.webp" alt="bocaditos de coco"></div>
-
-        <div class="texto-producto-2">
-          <h3>BOCADITOS DE COCO</h3>
-          <p class="parr-1">Para los amantes del coco, les ofrecemos estos deliciosos bocaditos para compartir con
-            amigos.</p>
-          <p class="parr-2">Caja x12 de bocaditos de coco de 20gr. por unidad.</p><br>
-          <a href="#" class="btn-info">+ INFO</a>
-        </div>
-
-
-
-        <div class="prod-3"><img src="./img/sinazucar.webp" alt="budin sin azucar"></div>
-
+        <!-- Contenido del segundo elemento -->
         <div class="texto-producto-3">
           <h3>BUDÍN SIN AZÚCAR</h3>
           <p class="parr-1">Disfrutá de este delicioso budín que no solo es sin azúcar sino que también es saludable.
@@ -144,7 +145,22 @@
           <p class="parr-2">Budín individual, sabor a limón sin azúcar, en su presentación de 250gr.</p><br>
           <a href="#" class="btn-info">+ INFO</a>
         </div>
+   
+
+ 
+      <!-- Contenido del primer elemento -->
+    <img class="prod-4" src="./img/cake-pops.jpg" alt="budin sin azucar">
+ 
+ 
+      <!-- Contenido del segundo elemento -->
+      <div class="texto-producto-4">
+        <h3>CAKE POPS</h3>
+        <p class="parr-1">Deliciosas bolitas que enamoran a niños y adultos, convirtiéndose así en una excelente opción para sorprender a tus invitados.
+        </p>
+        <p class="parr-2"> Presentación de 6 unidades por envase de 5gr. c/u</p><br>
+        <a href="#" class="btn-info">+ INFO</a>
       </div>
+
     </section>
   </main>
 
@@ -162,11 +178,11 @@
           <h5 class="h5-f">Dejanos tu consulta y nos pondremos en contacto a la brevedad.</h5>
           <label for="nombre">NOMBRE</label><br>
           <input type="text" id="nombre" name="nombre"><br>
-          <label for="email">EMAIL: </label>
+          <label for="email">EMAIL: </label><br>
           <input type="text" id="email"><br>
           <label for="text">CONSULTA</label><br>
           <textarea name="eltexto"></textarea><br>
-          <input type="submit" value="Enviar">
+          <button class="btn-form" type="submit" value="Enviar">ENVIAR</button>
         </form>
         <!--formulario de la card-->
 
@@ -177,11 +193,11 @@
 
 
   <footer>
-    <div class="logo">
-       <img src="./img/logo.png" alt="logo de humaya">
-      </div>
+    <div class="logo ocultar-div">
+      <img src="./img/logo.png" alt="logo de humaya">
+    </div>
 
-    <div class="menu">
+    <div class="menu ocultar-div">
       <ul>
         <li class="texto-li">MENU</li>
         <li>Home</li>
@@ -191,7 +207,7 @@
       </ul>
     </div>
 
-    <div class="navegacion">
+    <div class="navegacion ocultar-div">
       <ul>
         <li class="texto-li">NAVEGACIÓN</li>
         <li>Preguntas Frecuentes</li>
@@ -210,16 +226,16 @@
       </ul>
     </div>
 
-    <div class="ubicacion">
+    <div class="ubicacion ocultar-div">
       <ul class="m-top-ubicacion">
         <li class="texto-li">UBICACIÓN</li>
-        <iframe class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.15993302689!2d-58.388975152166616!3d-34.65369315832102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1691986966619!5m2!1ses!2sar"
-          style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+        <li><iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.15993302689!2d-58.388975152166616!3d-34.65369315832102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1691986966619!5m2!1ses!2sar"
+            style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </li>
       </ul>
     </div>
-
+    <small class="copy">Todos los derechos reservados &#169</small>
   </footer>
   <!--SCRIPT BOOTSTRAP JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
