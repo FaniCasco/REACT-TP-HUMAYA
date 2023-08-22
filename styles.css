@@ -49,7 +49,7 @@ nav {
     height: 188px;
     border-radius: 100px;
     margin-left: 20px;
-    margin-bottom: -84%;
+    margin-bottom: -34%;
     border: solid 2px #d2675a;
 
 }
@@ -63,7 +63,7 @@ nav {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 165vh;
+    height: 156vh;
 
 }
 
@@ -81,14 +81,17 @@ nav {
 }
 
 #texto-portada p {
-    color: #573732;
+    color: #4a2e2a;
     font-size: 1.7em;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+  padding: 30px;
+    background-color: #ffbea580;
+    border-radius: 25px;
 }
 
 #texto-portada h1 {
-    color: #573732;
+    color: #4a2e2a;
+    padding: 30px;
+   
 }
 
 /*boton principal*/
@@ -253,8 +256,13 @@ nav {
     text-decoration: none;
     color: #ffbfa5;
     font-size: 1.3em;
-    padding: 5px 18px 5px 18px;
-    margin-left: 40%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 129px;
+    
 
 }
 
@@ -387,6 +395,10 @@ textarea {
     background-color: #65403b;
     color: #ffbfa5;
     font-weight: 600;
+    
+}
+form .h5-f {
+    max-width: 73vw;
 }
 
 /*footer*/
