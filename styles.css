@@ -695,4 +695,7 @@ footer .redes {
         margin-bottom: -37vh;
         margin-top: -58px;
     }
+    #texto-portada h1 {
+        margin-top: -84px;
+    }
 }
