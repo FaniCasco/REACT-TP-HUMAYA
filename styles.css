@@ -218,17 +218,18 @@ nav {
 .texto-producto-3,
 .texto-producto-4 {
     color: #ffbfa5;
-    padding: 15%;
+    margin: 20px 20px 10px 20px;
 
 }
 
 .parr-1 {
     color: #fdf0e4;
+    margin: 20px 20px 10px 20px;
 }
 
 .parr-2 {
     font-weight: 600;
-    margin-bottom: 10%;
+    margin: 20px 20px 10px 20px;
 }
 
 .bg {
@@ -277,6 +278,11 @@ nav {
 .texto-producto-1 {
     grid-column: 2 / 3;
     grid-row: 1;
+    
+}
+
+.texto-producto-1 h3, .texto-producto-2 h3, .texto-producto-3 h3, .texto-producto-4 h3 {
+    margin: 50px 20px 10px 20px;
 }
 
 .prod-2 {
@@ -525,7 +531,9 @@ footer .redes {
         grid-template-rows: auto;
         text-align: center;
     }
-
+.texto-producto-1, .texto-producto-2, .texto-producto-3, .texto-producto-4 {
+    padding-bottom: 69px;
+}
 
     .prod-1 {
 
