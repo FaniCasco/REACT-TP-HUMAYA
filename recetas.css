@@ -1,0 +1,143 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	background-image: linear-gradient(120deg, #f88e70 0%, #f6d365 100%);
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background-color: #281917;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background-color: #d2675a;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background-color: aliceblue;
+    color: #4f2823;
+}
+ a{
+    text-decoration: none;
+	
+}
+.contenedor {
+	
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows:auto;
+	gap: 30px;
+	padding-bottom: 10px;
+}
+.contenedor .receta .preparacion {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	
+	background-color: transparent;
+    border: solid 3px #ffbfa5;
+    color: #ffbfa5;
+    font-size: 1.3em;
+    padding: 5px;
+    width: 150px;
+	
+	
+}
+.contenedor .receta .titulo {
+	font-size: 1.1em;
+	width:auto;
+	height: 50px;
+}
+
+
+.contenedor .receta {
+	margin-top: 30px;
+	width: auto;
+	height: 90%;
+	text-align: center;
+	color: #ffbfa5;
+	padding-top: 30px;
+	background-color: #573732;
+	
+}
+.contenedor .receta .preparacion:hover {
+	color:#ffbfa5;
+	background-color: #0c0200;
+	transition: .2s;
+}
+
+.contenedor .receta img {
+	width: 100%;
+	height: 50%;	
+	display: flex;
+	margin-bottom: 34px;
+
+	
+	
+}
+/*****************/
+.cabecera {
+
+	margin-top: -30px;
+	width: 100%;
+	height: auto;
+
+}
+.pie {
+	background-color: #f6d365;
+	margin-bottom: 100px;
+}
+
+/****media querys****/
+@media screen and (max-width: 1200px) {
+	.contenedor {
+		grid-template-columns: repeat(3, 250px);
+	}
+}
+@media screen and (max-width: 768px) {
+	.contenedor {
+		grid-template-columns: repeat(2, 250px);
+	}
+}
+@media screen and (max-width: 500px) {
+	.contenedor {
+		grid-template-columns: repeat(1, 250px);
+	}
+}
+

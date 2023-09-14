@@ -122,9 +122,36 @@ nav {
     color: #ffbfa5;
 }
 
+.mas-recetas {
+    padding: 10px 0px;
+    background-color: #ffbfa5;
+
+}
+
+.lista-icons {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
 .calidad .img-fluid {
     margin-right: 20px;
     width: 180px;
+}
+
+#recetas {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #573732;
+
+}
+
+#recetas:hover {
+    background-color: black;
+    color: #ffbfa5;
+    width: 100%;
+    transition: .3s ease all;
 }
 
 /*section recetas*/
